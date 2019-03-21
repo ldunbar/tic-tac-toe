@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: 30% repeat(3, 75px);
+  grid-template-rows: 75px;
+  grid-gap: 0px;
+  grid-template-areas:
+    ". hdr hdr hdr"
+    ". a1 a2 a3"
+    ". b1 b2 b3"
+    ". c1 c2 c3";
+}
+
+#hdr {
+  grid-area: hdr;
+  justify-self: center;
+  align-self: center;
+}
+#a1 {
+  grid-area: a1;
+  border: 1px solid black;
+}
+#a2 {
+  grid-area: a2;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#a3 {
+  grid-area: a3;
+  border: 1px solid black;
+}
+
+#b1 {
+  grid-area: b1;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#b2 {
+  grid-area: b2;
+}
+#b3 {
+  grid-area: b3;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#c1 {
+  grid-area: c1;
+  border: 1px solid black;
+}
+#c2 {
+  grid-area: c2;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#c3 {
+  grid-area: c3;
+  border: 1px solid black;
+}
+
+.ttt {
+  font-size: 24px;
+  justify-self: center;
+  align-self: center;
+  padding: 1.8rem;
+  color: white;
+}
+
+.X, .O {
+  font-weight: bold;
+}
+.X {
+  color: red;
+}
+.O {
+  color: black;
+}
